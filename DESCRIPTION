@@ -1,0 +1,27 @@
+Package: CellSIUS
+Title: CellSIUS: Cell Subtype Identification from Upregulated gene Sets
+Version: 1.0.0
+Authors@R: c(person("Rebekka", "Wegmann", email = "wegmann@imsb.biol.ethz.ch", role = c("aut")),
+          person("Marilisa", "Neri", email = "marilisa.neri@novartis.com", role = c("aut", "cre")))
+Description: CellSIUS enables the identification and characterization
+    of (rare) cell sub-populations from complex scRNA-seq datasets: 
+    it takes as input expression values of N cells grouped into M(>1) 
+    clusters. Within each cluster, genes with a bimodal distribution 
+    are selected and only genes with cluster-specific expression are 
+    retained. Among these candidate marker genes, sets with correlated
+    expression patterns are identified by graph-based clustering.
+    Finally, cells are assigned to subgroups based on their average 
+    expression of each gene set. The CellSIUS algorithm output provides the 
+    rare/ sub cell types by cell indices and their transcriptomic signatures.
+Depends: R (>= 3.4.2)
+Imports: Ckmeans.1d.dp, data.table, igraph, ggplot2, RColorBrewer, Rcpp
+        (>= 0.12.18)
+License: file LICENSE.txt
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.0.9000
+NeedsCompilation: no
+Packaged: 2019-05-27 12:17:48 UTC; nerima8
+Author: Rebekka Wegmann [aut],
+  Marilisa Neri [aut, cre]
+Maintainer: Marilisa Neri <marilisa.neri@novartis.com>
