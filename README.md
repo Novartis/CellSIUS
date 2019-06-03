@@ -10,6 +10,8 @@ Finally, cells are assigned to subgroups based on their average
 expression of each gene set. The CellSIUS algorithm output provides the
 rare/ sub cell types by cell indices and their transcriptomic signatures.
 
+[![DOI](https://zenodo.org/badge/189385961.svg)](https://zenodo.org/badge/latestdoi/189385961)
+
 ## Reference
 Wegmann *et Al.*, **CellSIUS provides sensitive and specific detection of rare cell populations from complex single cell RNA-seq data**, Genome Biology, 2019 [accepted]
 
